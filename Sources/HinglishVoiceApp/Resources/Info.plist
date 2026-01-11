@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleDisplayName</key>
+    <string>HinglishVoice</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.hinglishvoice.accessibility.voice</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>HinglishVoice uses on-device speech recognition to accurately process your Hinglish voice commands without sending audio data to external servers.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone access is required to listen to your voice commands for reminders, calls, and navigation.</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>HinglishVoice needs access to your Reminders to create and manage reminders from your voice commands.</string>
+    <key>NSRemindersFullAccessUsageDescription</key>
+    <string>HinglishVoice creates reminders in your Reminders app when you command in Hinglish.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Contacts access allows HinglishVoice to resolve spoken names like 'Rahul' or 'Mummy' when you make calls or send messages.</string>
+</dict>
+</plist>
