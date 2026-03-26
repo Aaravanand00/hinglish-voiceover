@@ -1,0 +1,247 @@
+[
+  {
+    "id": "rem_01",
+    "phrase": "kal 5 baje meeting ka reminder laga do",
+    "phoneticVariants": ["kl 5 bj meeting reminder lga do", "kal 5 baje meeting yaad dila dena"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Meeting",
+      "dateString": "Kal (Tomorrow)",
+      "timeString": "05:00 PM",
+      "targetHour": 17,
+      "targetMinute": 0
+    },
+    "notes": "Standard reminder with tomorrow date and 5 PM"
+  },
+  {
+    "id": "rem_02",
+    "phrase": "aaj shaam 7 baje gym yaad dila dena",
+    "phoneticVariants": ["aj sham 7 bje gym yaad dilana", "today evening 7 baje gym reminder"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Gym",
+      "dateString": "Aaj (Today)",
+      "timeString": "07:00 PM",
+      "targetHour": 19,
+      "targetMinute": 0
+    },
+    "notes": "Evening gym reminder"
+  },
+  {
+    "id": "rem_03",
+    "phrase": "subah 6 baje ka alarm set karo",
+    "phoneticVariants": ["subah 6 bje alarm lagao", "morning 6 am alarm laga do"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "set_alarm",
+    "exampleEntities": {
+      "timeString": "06:00 AM",
+      "targetHour": 6,
+      "targetMinute": 0
+    },
+    "notes": "Morning alarm command"
+  },
+  {
+    "id": "rem_04",
+    "phrase": "parso doctor appointment remind kar dena",
+    "phoneticVariants": ["parson doctor appointment yaad dilao", "parso 11 baje doctor appointment"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Doctor Appointment",
+      "dateString": "Parso"
+    },
+    "notes": "Day after tomorrow reminder"
+  },
+  {
+    "id": "rem_05",
+    "phrase": "raat 9 baje dawai lene ka reminder lagao",
+    "phoneticVariants": ["rat 9 bje medicine yaad dilana", "night 9 pm medicine reminder"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Dawai Lene",
+      "timeString": "09:00 PM",
+      "targetHour": 21,
+      "targetMinute": 0
+    },
+    "notes": "Night medicine reminder"
+  },
+  {
+    "id": "rem_06",
+    "phrase": "kal dopahar 2 baje flight status check karne ka reminder set karo",
+    "phoneticVariants": ["kal 2 baje flight reminder", "kal dopahar 2 pm flight"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Flight Status Check Karne",
+      "dateString": "Kal (Tomorrow)",
+      "timeString": "02:00 PM",
+      "targetHour": 14,
+      "targetMinute": 0
+    },
+    "notes": "Afternoon flight reminder"
+  },
+  {
+    "id": "rem_07",
+    "phrase": "mujhe 10 baje grocery lene ke liye yaad dilao",
+    "phoneticVariants": ["10 bje grocery remind karna", "10 am grocery yaad dila do"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "create_reminder",
+    "exampleEntities": {
+      "reminderTitle": "Grocery Lene Ke",
+      "timeString": "10:00 AM",
+      "targetHour": 10,
+      "targetMinute": 0
+    },
+    "notes": "Grocery shopping reminder"
+  },
+  {
+    "id": "rem_08",
+    "phrase": "subah 7:30 baje yoga ka alarm lagao",
+    "phoneticVariants": ["7:30 am yoga alarm", "subah 7 30 baje alarm"],
+    "expectedCategory": "Reminder & Alarm",
+    "expectedAction": "set_alarm",
+    "exampleEntities": {
+      "timeString": "07:30 AM",
+      "targetHour": 7,
+      "targetMinute": 30
+    },
+    "notes": "Alarm with minutes"
+  },
+  {
+    "id": "call_01",
+    "phrase": "Rahul ko call lagao",
+    "phoneticVariants": ["rahul ko phone karo", "call rahul", "rahul ko dial karo"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "make_call",
+    "exampleEntities": {
+      "contactName": "Rahul"
+    },
+    "notes": "Standard call command"
+  },
+  {
+    "id": "call_02",
+    "phrase": "Mummy ko phone karo",
+    "phoneticVariants": ["mummy ko call lagao", "call mummy", "mummy se baat kara do"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "make_call",
+    "exampleEntities": {
+      "contactName": "Mummy"
+    },
+    "notes": "Family contact call"
+  },
+  {
+    "id": "call_03",
+    "phrase": "Papa ko dial karo",
+    "phoneticVariants": ["papa ko phone lagao", "papa ko call karo"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "make_call",
+    "exampleEntities": {
+      "contactName": "Papa"
+    },
+    "notes": "Family contact dial"
+  },
+  {
+    "id": "call_04",
+    "phrase": "Doctor Sharma ko call lagao",
+    "phoneticVariants": ["call doctor sharma", "dr sharma ko phone karo"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "make_call",
+    "exampleEntities": {
+      "contactName": "Doctor Sharma"
+    },
+    "notes": "Multi-word contact name call"
+  },
+  {
+    "id": "msg_01",
+    "phrase": "Pooja ko message bhejo ki main late ho jaunga",
+    "phoneticVariants": ["pooja ko text karo late ho jaunga", "message pooja that i am late"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "send_message",
+    "exampleEntities": {
+      "contactName": "Pooja",
+      "messageContent": "main late ho jaunga"
+    },
+    "notes": "SMS command with message body"
+  },
+  {
+    "id": "msg_02",
+    "phrase": "Amit ko text karo ki meeting shuru ho gayi hai",
+    "phoneticVariants": ["amit ko msg bhej do meeting started", "text amit meeting shuru ho gayi"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "send_message",
+    "exampleEntities": {
+      "contactName": "Amit",
+      "messageContent": "meeting shuru ho gayi hai"
+    },
+    "notes": "SMS command with Hinglish body"
+  },
+  {
+    "id": "msg_03",
+    "phrase": "Rohan ko message bhejo",
+    "phoneticVariants": ["rohan ko text bhejo", "message rohan"],
+    "expectedCategory": "Calls & Messages",
+    "expectedAction": "send_message",
+    "exampleEntities": {
+      "contactName": "Rohan"
+    },
+    "notes": "Compose message without upfront body"
+  },
+  {
+    "id": "nav_01",
+    "phrase": "home screen pe wapas jao",
+    "phoneticVariants": ["home jao", "go home", "main screen pe chalo", "home screen kholo"],
+    "expectedCategory": "App Navigation",
+    "expectedAction": "navigate_home",
+    "exampleEntities": {
+      "navigationTarget": "home"
+    },
+    "notes": "Home screen navigation"
+  },
+  {
+    "id": "nav_02",
+    "phrase": "pichle page pe chalo",
+    "phoneticVariants": ["wapas jao", "go back", "back jao", "peeche chalo"],
+    "expectedCategory": "App Navigation",
+    "expectedAction": "navigate_back",
+    "exampleEntities": {
+      "navigationTarget": "back"
+    },
+    "notes": "Back navigation"
+  },
+  {
+    "id": "nav_03",
+    "phrase": "settings kholo",
+    "phoneticVariants": ["setting me jao", "open settings", "setting page dikhao"],
+    "expectedCategory": "App Navigation",
+    "expectedAction": "open_settings",
+    "exampleEntities": {
+      "navigationTarget": "settings"
+    },
+    "notes": "Settings navigation"
+  },
+  {
+    "id": "nav_04",
+    "phrase": "help kholo",
+    "phoneticVariants": ["madad chahiye", "commands batao", "kya kya bol sakte hain", "guide dikhao"],
+    "expectedCategory": "App Navigation",
+    "expectedAction": "open_help",
+    "exampleEntities": {
+      "navigationTarget": "help"
+    },
+    "notes": "Help and phrases guide"
+  },
+  {
+    "id": "nav_05",
+    "phrase": "ye kya hai screen describe karo",
+    "phoneticVariants": ["screen padho", "screen pe kya hai", "describe screen", "kya likha hai"],
+    "expectedCategory": "App Navigation",
+    "expectedAction": "read_screen",
+    "exampleEntities": {
+      "navigationTarget": "current_screen"
+    },
+    "notes": "VoiceOver screen reader description"
+  }
+]
